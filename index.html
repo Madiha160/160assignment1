@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- Include the jQuery library -->
+<scriptsrc="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>NUCES Information</title>
+<style type="text/css">
+
+section 
+{
+	height: 2000px;
+	display: block;
+}
+#a
+{
+	background:#000;
+	height:20px;
+	color:#FFF;
+}
+#logo
+{
+	background:#999;
+}
+#lists
+{
+	background:#003;
+	color:#FFF;
+}
+#footer
+{
+	background:#666;
+	color:#CCC;
+	text-align:center;
+}
+body
+{
+	font:20px Verdana, Geneva, sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+<section data-role="page" id="mainPage">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+</div>
+<div data-role="content"  id="lists">
+<ul data-role="listview">
+<li><a href="#pageCampus" data-transition="slide">Campuses</a></li>
+<li><a href="#pageAdmission" data-transition="slide">Admissions</a></li>
+<li><a href="#pageDept" data-transition="slide">Departments</a></li>
+</ul>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageCampus">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#mainPage" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content" id="lists">
+<ul data-role="listview">
+<h4>Campuses</h4>
+<li><a href="#pageISL" data-transition="slide">Islamabad</a></li>
+<li><a href="#pageLHR" data-transition="slide">Lahore</a></li>
+<li><a href="#pageKHI" data-transition="slide">Karachi</a></li>
+<li><a href="#pagePSH" data-transition="slide">Peshawar</a></li>
+</ul>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageAdmission">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#mainPage" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div>
+<h3 id="lists">Admissions</h3>
+</div>
+<div id="a">
+<h6>Admission Schedule</h6>
+</div>
+<div>
+<table data-role="table" class="ui-responsive" id="myTable">
+<thead>
+        <tr>
+        <th>        </th>
+          <th data-priority="1">BBA & BS</th>
+          <th data-priority="1">MS & MBA</th>
+        </tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Submission</td>
+<td>Jun 9 - 28 (Mon-Sat)</td>
+<td>Jun 9 - 28 (Mon-Sat)</td>
+</tr>
+<tr>
+<td>Admission Tests</td>
+<td>Jul 1 - 7 (Tue-Mon)</td>
+<td>Jul 1 - 7 (Tue-Mon)</td>
+</tr>
+<tr>
+<td>Declaration of selected candidates</td>
+<td>Jul 19 (Sat)</td>
+<td>Jul 12 (Sat)</td>
+</tr>
+<tr>
+<td>Interviews</td>
+<td></td>
+<td>Jul 15 - 17 (Tue-Thu)</td>
+</tr>
+<tr>
+<td>Admission Formalities</td>
+<td>Jul 21 - 24 (Mon-Thu)</td>
+<td>Jul 28 - 30 (Mon-Wed)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageDept">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#mainPage" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content" id="lists">
+<ul data-role="listview">
+<h4>Departments</h4>
+<li><a href="#pageCS" data-transition="slide">CS</a></li>
+<li><a href="#pageEE" data-transition="slide">EE</a></li>
+<li><a href="#pageBA" data-transition="slide">Management</a></li>
+</ul>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageCS">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageDept" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<h4>Computer Science</h4>
+<div data-role="collapsible" id="lists">
+<h4>BS</h4>
+<p>The purpose of Computer Science degree programs is to produce computer scientists, who can form the backbone of the rapidly growing computer industry. The BS program is focused on developing an in depth understanding of both the theoretical and practical aspects of computer science through a rigorous course work spanning over a period of four years. Students are given unique opportunities to go beyond traditional computer science and get themselves involved in research activities through various research and industrial collaboration programs carried out at the campuses. This ensures a broad based educational foundation that prepares them for leadership roles along diverse career paths.
+To equip students with modern trends in the ever changing field of computer science, courses are offered in concentration areas of Semantic Web, Multi-Agent Intelligent Systems, Networks, Data Mining and Data Warehousing, Software Engineering and Quality Assurance, Graphics and Game Programming, Image Processing, Soft Computing, Corporate and Business Computing, E-commerce etc. Students select courses from these areas to match with their future career options in a broad range of industrial, corporate, multinational, governmental and non-governmental organizations. Our courseware is tailored according to the international standards to nurture capacity building and original thinking in our graduates for life-long-learning. No doubt that our graduates are highly sought after by a majority of national and international IT industry.<p/>
+</div>
+<div data-role="collapsible" id="lists">
+<h4>MS</h4>
+<p>The MS (Computer Science) comprises course work and research component. It has four ‘core courses’ aimed at strengthening the understanding and competence in computer science fundamentals. The University expects its MS graduates to pursue careers either as ‘Computer Science Faculty Members’ or as ‘Software Development Managers’ in the industry.</p>
+</div>
+<div data-role="footer" class="ui-footer-fixed"  id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageEE">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageDept" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<h4>Electrical Engineering</h4>
+<div data-role="collapsible" id="lists">
+<h4>BS</h4>
+<p>The Electrical Engineering degree is based on the HEC/PEC approved curriculum. In the first year the students learn the fundamentals of Electrical Engineering supported by essential mathematics and physics courses. These courses are followed by breadth courses which introduce students to different specialties in Electrical Engineering. In the senior year students choose a specialization stream and study advanced courses. Currently specializations are being offered in three areas, Telecommunication Engineering, and Computer Engineering. In the highly competitive job market a young engineer is not only required to be knowledgeable in technical areas but is also expected to have excellent communication and managerial skills and an appreciation of modern day economics to design and implement a cost effective engineering solution. Students are offered courses in communication skills, engineering management and economics to prepare them for challenging environments. Social Science electives and courses in Professional Ethics contribute in enhancing the soft skills and help prepare a well rounded personality. The course work is supported by state of the art engineering labs. During four years, students work in twelve different labs where they perform experiments using state of the art instruments, equipment and simulation software.</p>
+</div>
+<div data-role="collapsible" id="lists">
+<h4>MS</h4>
+<p>This program prepares a graduate in Electrical Engineering to acquire expertise in a particular area. In the final year, the student normally undertakes a thesis. This may be undertaken in collaboration with the industry, under the guidance of industry experts and a faculty supervisor from the University.
+A student has the option to pursue MS by undertaking either a 6 credit hour MS Thesis or MS Project, spread over two regular semesters.</p>
+<p>Typical course load in a semester is four courses. However, NUCES staff cannot register for more than two courses in a semester.</p>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageBA">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageDept" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<h4>Management</h4>
+<div data-role="collapsible" id="lists">
+<h4>BS</h4>
+<p>Change is the only constant known today to the business world which has to grapple with the challenging realities of an increasingly global and complex marketplace. The Bachelor of Business Administration (BBA) program at FAST attempts to bring out dynamic managers and administrators, well-equipped to meet the challenges posed by this highly competitive global marketplace. To this end, the approach in the classroom is tailored to inculcate an appreciation for both the quantitative and qualitative dimensions of business. Quantitative skills developed through such areas as accounting, statistics, financial modelling and linear programming are combined with qualitative skills in communication, human psychology, marketing and organizational behaviour. Using these diverse skills and tools, BBA graduates are expected to be able to provide timely solutions to real-world business problems – solutions that are cost-effective, efficient and ethically correct.</p>
+</div>
+<div data-role="collapsible" id="lists">
+<h4>MS</h4>
+<p>This 2-year Master of Business Administration (MBA) program focuses on strategic, specialized and advanced courses across the functional areas of business. Additionally, this intellectually-stimulating program is designed with a view to 'researching' local & regional management phenomena rather than merely 'studying' them. Students are taught decision-making skills through qualitative and quantitative analysis and are expected to offer vibrancy to the corporate culture. This program is intended to produce managers and business administrators who are ready to face multi-dimensional and complex real-life business problems and who can provide effective and efficient solutions to such problems.</p>
+</div>
+<div data-role="footer" class="ui-footer-fixed"  id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageISL">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageCampus" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content">
+<center><h4>Address: FAST-NU, A.K. Brohi Road, Islamabad </h4></center>
+<center><h4>Phone:(051) 111 128 128</h4></center>
+<center><a href="geo:33.656396, 73.016533?q=National+University+of+Computer+&+Emerging+Sciences+Islamabad"><img src="isl.png"/></a></center>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+<section data-role="page" id="pageLHR">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageCampus" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content">
+<center><h4>Address: FAST-NU, Milaad St, Lahore 54000</h4></center>
+<center><h4>Phone:(042) 111 128 128</h4></center>
+<center><a href="geo:31.481139, 74.303753?q=National+University+of+Computer+and+Emerging+Sciences,+Milaad+Street,+Lahore,+Punjab,+Pakistan"><img src="lhr.png"/></a></center>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+<section data-role="page" id="pageKHI">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageCampus" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content">
+<center><h4>Address: FAST-NU, Shah Latif Town, Karachi</h4></center>
+<center><a href="geo:24.856994, 67.264486?q=FAST+-+National+University+of+Computer+&+Emerging+Sciences,+Karachi,+Sindh,+Pakistan"><img src="khi.png"/></a></center>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+<section data-role="page" id="pagePSH">
+<div data-role="header" id="logo">
+<center><img src="nu.png"/></center>
+<a href="#pageCampus" class="ui-btnui-icon-home ui-btn-icon-left">Back</a>
+</div>
+<div data-role="content">
+<center><h4>Address: FAST-NU, Industrial Estate, Hayatabad Peshawar, Pakistan</h4></center>
+<center><h4>Phone:(091) 111 128 128</h4></center>
+<center><a href="geo:33.980447, 71.427559?q=National+University+of+Computer+&+Emerging+Sciences,+Peshawar,+Khyber+Pakhtunkhwa,+Pakistan"><img src="psh.png"/></a></center>
+</div>
+<div data-role="footer" class="ui-footer-fixed" id="footer">
+<h4>All rights reserved.</h4>
+</div>
+</section>
+
+</body>
+</html>
